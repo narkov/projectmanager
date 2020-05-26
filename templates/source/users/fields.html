@@ -1,0 +1,25 @@
+<table width="25%" border="0" cellspacing="2" cellpadding="3" class="formLayout" align="center">
+    <ERRORSUMMARY id='Summary'>
+    <list:ITEM>
+        <tr valign="top">
+          <td width="20%">&nbsp;</td>
+          <td width="80%"><FONT COLOR="RED">{$ErrorMessage}</FONT></td>
+        </tr>
+    </list:ITEM>
+    </ERRORSUMMARY>
+    <tr valign="top">
+      <td width="20%"><label for="Username" runat="server">Username</label></td>
+      <td width="80%"><input name="Username" type="text" id="Username" size="18" runat="server"></td>
+    </tr>
+    <tr valign="top">
+      <td width="20%"><label for="Password" runat="server">Password</label></td>
+      <td width="80%"><input name="Password" type="password" id="Password" size="18" runat="server"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+        <input type="submit" name="submit" value="{$#SubmitCaption}" runat="server">
+        <!--input type="submit" name="signin" value="Sign In" runat="server"-->
+      </td>
+    </tr>
+</table>

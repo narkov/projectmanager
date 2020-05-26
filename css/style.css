@@ -1,0 +1,72 @@
+html, body {
+    font-family: verdana, helvetica, sans-serif;
+    font-size: 10pt;
+}
+h1 {
+    font-size: 16pt;
+    color: #a57b46;
+    font-weigth: normal;
+}
+th {
+    font-size: 10.3pt;
+    background-color: #deb673;
+    color: white;
+    padding: 4px;
+    border: 1px solid #a57b46;
+    border-bottom: 5px solid #a57b46;
+}
+td {
+    font-size: 9pt;
+    vertical-align: top;
+    border: 1px solid #d8ae79;
+    padding: 4px;
+}
+#exampleNames {
+    background-color: #f7dbad;
+}
+#exampleDocs {
+    background-color: #fae8ba;
+}
+#exampleSources {
+    background-color: #fff3c5;
+}
+.odd {
+    background-color: #f7dbad;
+}
+.breadcrumbs {
+    border: 1px solid #a57b46;
+    margin: 20px 0 20px 0;
+    padding: 5px;
+}
+.tree {
+    background-color: #fae8ba;
+    border: 1px solid #d8ae79; /* #a57b46 */
+}
+ul {
+    list-style-type: square;
+}
+.formLayout {
+	border: 1px solid #a57b46;
+	background-color: #fae8ba;
+}
+.formLayout td {
+    border: 0;
+}
+.formLayout th {
+    border: 0;
+    background-color: #f7dbad;
+    font-size: 9pt;
+    color: black;
+    font-weight: normal;
+    text-align: left;
+}
+.warning {
+    color: red;
+    background-color: yellow;
+    padding: 4px;
+    border: 1px solid red;
+}
+.deprecated {
+  color: red;
+  font-weight: bold;
+}

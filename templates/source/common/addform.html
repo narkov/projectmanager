@@ -1,0 +1,26 @@
+<core:WRAP file="/common/layout.html" placeholder="Content">
+
+<h1 align="center">{$title}</h1>
+
+<form id="AddForm" name="AddForm" method="post" action="" runat="server">
+
+    <core:optional for="ShowPreview">
+        <h3 align="center">Preview</h3>
+        <div align="center">
+        <core:include file="{$#HeaderFile}">
+        <font size="1">Preview only. This {$#ItemName} has NOT been saved.</font></div>
+    </core:optional>
+
+    <core:optional for="LastRecord">
+      <core:datasource from="LastRecord">
+        <h3 align="center">Thank You Sir! May I have another?</h3>
+        <div align="center">
+        <core:include file="{$#HeaderFile}">
+        <font size="1">The {$#ItemName} has been added to database.</font> 
+        </div>
+      </core:datasource>
+    </core:optional>
+
+<br />
+<core:include file="{$#FieldsFile}">
+</form>

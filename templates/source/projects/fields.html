@@ -1,0 +1,33 @@
+<table width="100%" border="0" cellspacing="2" cellpadding="3" class="formLayout">
+    <ERRORSUMMARY id='Summary'>
+    <list:ITEM>
+        <tr valign="top">
+          <td width="20%">&nbsp;</td>
+          <td width="80%"><FONT COLOR="RED">{$ErrorMessage}</FONT></td>
+        </tr>
+    </list:ITEM>
+    </ERRORSUMMARY>
+    <tr valign="top">
+      <td width="20%"><label for="Name" runat="server">Name</label></td>
+      <td width="80%"><input name="Name" type="text" id="Name" size="64" runat="server"></td>
+    </tr>
+    <tr valign="top">
+      <td width="20%"><label for="Url" runat="server">Url</label></td>
+      <td width="80%"><input name="Url" type="text" id="Url" size="64" runat="server"></td>
+    </tr>
+    <tr>
+      <td><label for="Description">Description</label></td>
+      <td><textarea name="Description" cols="64" rows="4" id="Description" runat="server"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="preview" value="Preview" runat="server">
+          <input type="submit" name="submit" value="{$#SubmitCaption}" runat="server">
+      </td>
+    </tr>
+</table>

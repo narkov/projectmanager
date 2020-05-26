@@ -1,0 +1,37 @@
+<list:LIST id='List'>
+<div align="right">
+<page:navigator id="pagenav" items="20">
+Page: {$PageNumber} of {$TotalPages}
+    <page:first>First</page:first> <page:prev>Prev</page:prev>
+    <page:list>
+        <page:number>
+        <page:elipses>...</page:elipses>
+        <page:separator> </page:separator>
+    </page:list>
+    <page:next>Next</page:next> <page:last>Last</page:last>
+</page:navigator>
+</div>
+  <table width="100%" border="0" align="center">
+    <colgroup>
+        <col id="exampleNames">
+        <col id="exampleDocs">
+        <col id="exampleSources">
+    </colgroup>
+    <tr>
+        <th>name</th>
+        <th>description</th>
+        <th>action</th>
+    </tr>
+    <list:ITEM>
+      <tr class="{$Parity}">
+        <td><a href="{$Url}">{$Name}</a></td>
+        <td>{$Description}&nbsp;
+            <core:optional for="Deprecated">
+                <span class="deprecated">Deprecated</span>
+            </core:optional>
+        </td>
+        <td nowrap><html:link url="/details" param="Id">Details</html:link> <html:link url="/delete" param="Id">Delete</html:link> <html:link url="/edit" param="Id">Edit</html:link></td>
+      </tr>
+    </list:ITEM>
+  </table>
+</list:LIST>

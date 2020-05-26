@@ -1,0 +1,20 @@
+<core:WRAP file="/common/layout.html" placeholder="Content">
+<h1 align="center">{$title}</h1>
+<form id="DeleteForm" method="post" name="DeleteForm" runat="server">
+<core:include file="{$#HeaderFile}">
+<br />
+  <table width="60%" border="0" align="center" class="formLayout">
+    <tr valign="top">
+      <td>
+        <p class="warning">Delete this {$#ItemName}?</p>
+        <p>If you are not sure, use the 'Back' button on your browser to go
+          back to the previous screen.
+        </p>
+        <div align="center">
+          <input type="submit" name="delete" value="{$#SubmitCaption}" runat="server">
+          <input type="submit" name="cancel" value="Cancel" runat="server">
+        </div>
+      </td>
+    </tr>
+  </table>
+</form>
